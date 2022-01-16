@@ -98,8 +98,9 @@ def main() -> None:
                 URL = Url(DRIVER.current_url)
                 print(f"Getting new moves of {URL.name} ({index})")
                 MOVES = parse_move_list(TABS[TAB].text)
-
-                MAX_INDEX = min(PAIR * CONFIG["BEFORE_TURN"], len(MOVES))
+                
+                BEFORE_AS_PAIR = PAIR * CONFIG["BEFORE_TURN"]
+                MAX_INDEX = min(BEFORE_AS_PAIR, len(MOVES))
                 if CONFIG["MOVE"] in MOVES[:MAX_INDEX]:
                     print()
                     print("/!\\ " * 10)
@@ -110,6 +111,12 @@ def main() -> None:
                     print(moves_to_pgn(MOVES))
                     print()
                     TABS.pop(TAB)
+                else:
+                    if len(MOVES) > BEFORE_AS_PAIR:
+                        TABS.pop(TAB)
+
+            if not len(TABS):
+                break
 
             time.sleep(CONFIG["SLEEP"])
             index += 1
