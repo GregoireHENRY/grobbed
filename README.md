@@ -2,6 +2,8 @@
 
 > Early grob detector for MVL
 
+![demo][demo video]
+
 ## Installation
 
 1. clone or download this repo:
@@ -32,5 +34,9 @@ python grobbed.py
 
 You can update parameters in the file [`config.yaml`][config path].
 
+![config file image][config file image]
+
 [config path]: ./config.yaml
 [python url]: https://www.python.org/downloads
+[config file image]: ./asset/config-screenshot.png
+[demo video]: ./asset/demo.mp4
