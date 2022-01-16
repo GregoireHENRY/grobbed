@@ -25,7 +25,7 @@
 Place yourself in the directory and execute:
 
 ```sh
-python run.py
+python grobbed.py
 ```
 
 ## Parameters
