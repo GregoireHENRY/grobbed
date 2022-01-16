@@ -1,6 +1,6 @@
 # `grobbed`
 
-> Early grob detector for MVL
+> Real-time early grob detector for MVL
 
 https://user-images.githubusercontent.com/45257753/149674429-ed7e8d84-0a14-4500-a826-4bce27e0a80f.mp4
 
