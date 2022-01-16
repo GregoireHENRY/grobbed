@@ -1,0 +1,19 @@
+# Url pages of the event matchs to check.
+URL:
+  - https://www.chess.com/events/2022-tata-steel-chess-tournament-masters/02/Mamedyarov_Shakhriyar-Esipenko_Andrey
+  - https://www.chess.com/events/2022-tata-steel-chess-tournament-masters/02/Carlsen_Magnus-Giri_Anish
+  - https://www.chess.com/events/2022-tata-steel-chess-tournament-masters/02/Vidit_Santosh_Gujrathi-Caruana_Fabiano
+  - https://www.chess.com/events/2022-tata-steel-chess-tournament-masters/02/Praggnanandhaa_R-Duda_Jan_Krzysztof
+  - https://www.chess.com/events/2022-tata-steel-chess-tournament-masters/02/Rapport_Richard-Van_Foreest_Jorden
+  - https://www.chess.com/events/2022-tata-steel-chess-tournament-masters/02/Karjakin_Sergey-Dubov_Daniil
+  - https://www.chess.com/events/2022-tata-steel-chess-tournament-masters/02/Shankland_Sam-Grandelius_Nils
+
+# Move to detect.
+MOVE: g4
+
+# If the move is played after this count it won't trigger the detection.
+# It is counted as a move (1 half-move by white and black).
+BEFORE_TURN: 6
+
+# Sleep time between two checks.
+SLEEP: 10

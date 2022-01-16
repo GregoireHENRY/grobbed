@@ -1,0 +1,10 @@
+# Python generics.
+.mypy_cache/
+.pytest_cache/
+.coverage
+.env
+__pycache__/
+target/
+dist/
+
+geckodriver.log
